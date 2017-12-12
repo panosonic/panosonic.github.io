@@ -1,2 +1,3 @@
 # panosonic.github.io
-website
+
+https://panosonic.github.io/
